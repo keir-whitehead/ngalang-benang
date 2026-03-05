@@ -7,7 +7,7 @@ export default function PrivacyPolicy() {
             YOUR PRIVACY
           </h1>
           <p className="mt-10">
-            At ngalang.benang.com.au, we are committed to protecting your privacy. We
+            At ngalangbenang.com.au, we are committed to protecting your privacy. We
             use the information we collect about you to maximise the services
             that we provide to you. We respect the privacy and confidentiality
             of the information provided by you and adhere to the Australian
@@ -17,7 +17,7 @@ export default function PrivacyPolicy() {
           <p className="mt-2">
             You may change your details at any time by advising us in writing
             via email. All information we receive from our customers is
-            protected by our secure servers. ngalang.benang.com.au’s secure server
+            protected by our secure servers. ngalangbenang.com.au’s secure server
             software encrypts all customer information before it is sent to us.
             Furthermore, all customer data collected is secured against
             unauthorized use or access. Credit card information is not stored by
@@ -41,8 +41,8 @@ export default function PrivacyPolicy() {
         <section className="my-10">
           <h2 className="text-xl font-semibold">DISCLOSURE OF INFORMATION</h2>
           <p className="mt-2">
-            ngalang.benang.com.au may be required, in certain circumstances, to
-            disclose information in good faith and where ngalang.benang.com.au is
+            ngalangbenang.com.au may be required, in certain circumstances, to
+            disclose information in good faith and where ngalangbenang.com.au is
             required to do so in the following circumstances: by law or by any
             court; to enforce the terms of any of our customer agreements; or to
             protect the rights, property or safety of our customers or third
@@ -56,14 +56,14 @@ export default function PrivacyPolicy() {
             If you are in the business of creating similar documents, goods or
             services for the purpose of providing them for a fee to users,
             whether they be business users or domestic users, then you are a
-            competitor of ngalang.benang.com.au. ngalang.benang.com.au expressly excludes and
+            competitor of ngalangbenang.com.au. ngalangbenang.com.au expressly excludes and
             does not permit you to use or access our website, to download any
             documents or information from its website or obtain any such
             documents or information through a third party. If you breach this
-            term then ngalang.benang.com.au will hold you fully responsible for any
+            term then ngalangbenang.com.au will hold you fully responsible for any
             loss that we may sustain and further hold you accountable for all
             profits that you might make from such unpermitted and improper use.
-            ngalang.benang.com.au reserves the right to exclude and deny any person
+            ngalangbenang.com.au reserves the right to exclude and deny any person
             access to our website, services or information in our sole
             discretion.
           </p>
@@ -85,7 +85,7 @@ export default function PrivacyPolicy() {
             this website.
           </p>
           <p className="mt-2">
-            ngalang.benang.com.au expressly reserves all copyright and trademark in all
+            ngalangbenang.com.au expressly reserves all copyright and trademark in all
             documents, information and materials on our website and we reserve
             the right to take action against you if you breach any of these
             terms. Any redistribution or reproduction of part or all of the
@@ -107,8 +107,8 @@ export default function PrivacyPolicy() {
           <h2 className="text-xl font-semibold">WHOLE AGREEMENT</h2>
           <p className="mt-2">
             These terms and conditions represent the whole agreement between you
-            and ngalang.benang.com.au concerning your use and access to
-            ngalang.benang.com.au’s website and your use and access to the documents
+            and ngalangbenang.com.au concerning your use and access to
+            ngalangbenang.com.au’s website and your use and access to the documents
             and information on it. No other term is to be included in this
             agreement except where it is required to be included by any
             legislation of the Commonwealth or any State or Territory. All
@@ -150,7 +150,7 @@ export default function PrivacyPolicy() {
           <h2 className="text-xl font-semibold">JURISDICTION</h2>
           <p className="mt-2">
             This agreement and this website are subject to the laws of WA and
-            Australia. If there is a dispute between you and ngalang.benang.com.au that
+            Australia. If there is a dispute between you and ngalangbenang.com.au that
             results in litigation then you must submit to the jurisdiction of
             the courts of WA.
           </p>

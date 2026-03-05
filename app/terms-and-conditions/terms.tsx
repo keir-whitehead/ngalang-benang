@@ -11,13 +11,13 @@ export default function Terms() {
             Welcome to our website. If you continue to browse and use this
             website you are agreeing to comply with and be bound by the
             following terms and conditions of use, which together with our
-            privacy policy and website disclaimer, govern ngalang.benang.com.au’s
+            privacy policy and website disclaimer, govern ngalangbenang.com.au’s
             relationship with you in relation to your use of this website.
           </p>
           <p className="mt-2">
             By using this website, you signify your acceptance of these terms
             and conditions of use. For the purposes of these terms and
-            conditions, “Us”, “Our” and “We” refers to ngalang.benang.com.au and “You”
+            conditions, “Us”, “Our” and “We” refers to ngalangbenang.com.au and “You”
             and “Your” refers to you, the client, visitor, website user or
             person using our website.
           </p>
@@ -32,7 +32,7 @@ export default function Terms() {
             endeavour to highlight any significant or substantive changes to you
             where possible. If you choose to use our website then we will regard
             that use as conclusive evidence of your agreement and acceptance
-            that these terms govern your and ngalang.benang.com.au’s rights and
+            that these terms govern your and ngalangbenang.com.au’s rights and
             obligations to each other.
           </p>
         </section>
@@ -75,7 +75,7 @@ export default function Terms() {
             Subdivision A of the Competition and Consumer Act 2010 (Cth).
           </p>
           <p className="mt-2">
-            ngalang.benang.com.au’s liability for any breach of a term of this
+            ngalangbenang.com.au’s liability for any breach of a term of this
             agreement is limited to: the supplying of the goods or services to
             you again; the replacement of the goods; or the payment of the cost
             of having the goods or services supplied to you again.
@@ -88,16 +88,16 @@ export default function Terms() {
         <section className="my-10">
           <h2 className="text-xl font-semibold">LINKS TO OTHER WEBSITES</h2>
           <p className="mt-2">
-            ngalang.benang.com.au may from time to time provide on its website, links
+            ngalangbenang.com.au may from time to time provide on its website, links
             to other websites, advertisements and information on those websites
             for your convenience. This does not necessarily imply sponsorship,
-            endorsement, or approval or arrangement between ngalang.benang.com.au and
-            the owners of those websites. ngalang.benang.com.au takes no responsibility
+            endorsement, or approval or arrangement between ngalangbenang.com.au and
+            the owners of those websites. ngalangbenang.com.au takes no responsibility
             for any of the content found on the linked websites.
           </p>
           <p className="mt-2">
-            ngalang.benang.com.au’s website may contain information or advertisements
-            provided by third parties for which ngalang.benang.com.au accepts no
+            ngalangbenang.com.au’s website may contain information or advertisements
+            provided by third parties for which ngalangbenang.com.au accepts no
             responsibility whatsoever for any information or advice provided to
             you directly by third parties. We are making a ‘recommendation’ only
             and are not providing any advice nor do we take any responsibility
@@ -108,10 +108,10 @@ export default function Terms() {
         <section className="my-10">
           <h2 className="text-xl font-semibold">DISCLAIMER</h2>
           <p className="mt-2">
-            To the fullest extent permitted by law, ngalang.benang.com.au absolutely
+            To the fullest extent permitted by law, ngalangbenang.com.au absolutely
             disclaims all warranties, expressed or implied, including, but not
             limited to, implied warranties of merchantability and fitness for
-            any particular purpose. ngalang.benang.com.au gives no warranty that the
+            any particular purpose. ngalangbenang.com.au gives no warranty that the
             documents, goods or services will be free of errors, or that defects
             will be corrected, or that our website or its server is free of
             viruses or any other harmful components.
@@ -126,7 +126,7 @@ export default function Terms() {
           </p>
           <p className="mt-2">
             It is your sole responsibility and not the responsibility of
-            ngalang.benang.com.au to bear any and all costs of servicing, repairs, or
+            ngalangbenang.com.au to bear any and all costs of servicing, repairs, or
             correction. The applicable law in your state or territory may not
             permit these exclusions, particularly the exclusions of some implied
             warranties. Some of the above may not apply to you but you must
