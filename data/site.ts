@@ -3,7 +3,7 @@ export const siteConfig = {
   tagline:
     "A Joint Venture between NGALANG BENANG & Yakiny Moorditj Indigenous Corporation",
   abn: "52 695 365 667",
-  email: "indigenous@ngalang.benang.com.au",
+  email: "indigenous@ngalangbenang.com.au",
   phoneCivil: "0451 674 249",
   phoneIndigenous: "0406 452 401",
   addressLine1: "Unit 6/20 Dellamarta Road",

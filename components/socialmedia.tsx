@@ -22,7 +22,7 @@ function LinkedinIcon(props: ComponentProps<"svg">) {
 export const socialMediaProfiles = [
   {
     title: "Linkedin",
-    href: "mailto:indigenous@ngalang.benang.com.au",
+    href: "mailto:indigenous@ngalangbenang.com.au",
     icon: LinkedinIcon,
   },
 ];

@@ -156,9 +156,9 @@ export default function Contact() {
                   <span>
                     <a
                       className="hover:text-gray-900"
-                      href="mailto:indigenous@ngalang.benang.com.au"
+                      href="mailto:indigenous@ngalangbenang.com.au"
                     >
-                      indigenous@ngalang.benang.com.au
+                      indigenous@ngalangbenang.com.au
                     </a>
                   </span>
                 </dd>
