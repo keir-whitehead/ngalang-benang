@@ -7,13 +7,13 @@ export default function Hero() {
       <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
         <div className="px-6 pb-24 pt-10 sm:pb-32 lg:col-span-7 lg:px-0 lg:pb-32 lg:pt-28 xl:col-span-6">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <div className="flex justify-center lg:justify-center">
+            <div className="flex justify-start">
               <Image
                 src="/logo.webp"
                 alt="NGALANG BENANG Construction"
-                width={360}
-                height={116}
-                className="h-auto w-[280px] sm:w-[340px] object-contain"
+                width={420}
+                height={135}
+                className="h-auto w-[250px] sm:w-[300px] lg:w-[330px] object-contain"
                 priority
               />
             </div>
