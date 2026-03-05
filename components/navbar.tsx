@@ -20,10 +20,11 @@ export default function Navbar() {
           <span className="sr-only">NGALANG BENANG</span>
           <Image
             className="h-12 w-auto"
-            src="/logo.webp"
+            src="/logo_img.webp"
             alt="NGALANG BENANG Logo"
-            width={300}
-            height={300}
+            width={220}
+            height={72}
+            priority
           />
         </Link>
         <div className="flex lg:hidden">
@@ -61,10 +62,10 @@ export default function Navbar() {
               <span className="sr-only">Your Company</span>
               <Image
                 className="h-8 w-auto"
-                src="/logo.webp"
+                src="/logo_img.webp"
                 alt="NGALANG BENANG"
-                width={150}
-                height={150}
+                width={170}
+                height={56}
               />
             </Link>
             <button
