@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "NGALANG BENANG",
   tagline:
-    "A Joint Venture between Sanning Pty Ltd & Yakiny Moorditj Indigenous Corporation",
+    "A Joint Venture between NGALANG BENANG & Yakiny Moorditj Indigenous Corporation",
   abn: "52 695 365 667",
   email: "indigenous@ngalang.benang.com.au",
   phoneCivil: "0451 674 249",

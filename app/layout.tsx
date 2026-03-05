@@ -1,16 +1,13 @@
 import type { Metadata } from "next";
-import "@fontsource/lora/600.css";
-import "@fontsource/manrope/400.css";
-import "@fontsource/manrope/600.css";
-
-import { SiteFooter } from "@/components/site/site-footer";
-import { SiteHeader } from "@/components/site/site-header";
-
 import "./globals.css";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = {
-  title: "NGALANG BENANG",
-  description: "NGALANG BENANG civil and Indigenous affairs delivery partner in Western Australia.",
+  title: "NGALANG BENANG | Formwork, Steel, and Concreting",
+  description:
+    "NGALANG BENANG is a Western Australian formwork, reinforcing and concrete construction contractor.",
 };
 
 export default function RootLayout({
@@ -19,11 +16,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="bg-white text-zinc-900 antialiased">
-        <SiteHeader />
+    <html lang="en" className="h-full antialiased">
+      <body className="flex min-h-full flex-col">
+        <Navbar />
         {children}
-        <SiteFooter />
+        <Footer />
+        <Toaster />
       </body>
     </html>
   );
