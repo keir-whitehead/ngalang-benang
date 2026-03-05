@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { socialMediaProfiles } from "./socialmedia";
 import navigation from "./navigation";
 
 function getCurrentYear() {
@@ -38,19 +37,6 @@ export default function Footer() {
             Privacy Policy
           </Link>
         </nav>
-        <div className="mt-10 flex justify-center space-x-10">
-          {socialMediaProfiles.map((item) => (
-            <a
-              key={item.title}
-              href={item.href}
-              className="text-gray-400 hover:text-gray-500"
-              target="_blank"
-            >
-              <span className="sr-only">{item.title}</span>
-              <item.icon className="h-6 w-6" aria-hidden="true" />
-            </a>
-          ))}
-        </div>
         <p className="mt-10 text-center text-xs leading-5 text-gray-500">
           &copy; {getCurrentYear()} NGALANG BENANG. All rights reserved.
         </p>
