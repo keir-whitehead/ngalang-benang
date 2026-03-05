@@ -9,7 +9,7 @@ export default function Hero() {
           <div className="mx-auto max-w-2xl lg:mx-0">
             <div className="flex justify-center lg:justify-center">
               <Image
-                src="/logo_img.webp"
+                src="/logo.webp"
                 alt="NGALANG BENANG Construction"
                 width={360}
                 height={116}
