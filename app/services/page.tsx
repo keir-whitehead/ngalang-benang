@@ -94,7 +94,7 @@ export default function AboutPage() {
                 <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                   <div className="relative">
                     <Image
-                      src="/portnelson1.jpg"
+                      src="/portnelson1.webp"
                       alt="Port Nelson"
                       height={450}
                       width={450}
@@ -106,7 +106,7 @@ export default function AboutPage() {
                 <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                   <div className="relative">
                     <Image
-                      src="/northstar_jagcor2.jpg"
+                      src="/northstar_jagcor2.webp"
                       alt="Northstar Jagcor"
                       height={450}
                       width={450}
@@ -116,7 +116,7 @@ export default function AboutPage() {
                   </div>
                   <div className="relative">
                     <Image
-                      src="/baldiviswastewater.jpg"
+                      src="/baldiviswastewater.webp"
                       alt="Baldivis Wastewater Treament Plant"
                       height={450}
                       width={450}
@@ -128,7 +128,7 @@ export default function AboutPage() {
                 <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                   <div className="relative">
                     <Image
-                      src="/yre6.jpg"
+                      src="/yre6.webp"
                       alt="Metronet Yanchep Rail Extension"
                       height={450}
                       width={450}
@@ -138,7 +138,7 @@ export default function AboutPage() {
                   </div>
                   <div className="relative">
                     <Image
-                      src="/yre2.jpg"
+                      src="/yre2.webp"
                       alt="Metronet Yanchep Rail Extension"
                       height={450}
                       width={450}
@@ -182,7 +182,7 @@ export default function AboutPage() {
       <FadeIn>
         <div className="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
           <Image
-            src="/yre8.jpg"
+            src="/yre8.webp"
             alt="Cloudbreak FMG"
             className="aspect-[5/2] w-full object-cover xl:rounded-3xl"
             height={895}

@@ -16,8 +16,6 @@ import { ServicesMapProps, ServicesArrayProps } from "../data/services";
 
 export function ServicesCarousel({ services }: ServicesArrayProps) {
   const [api, setApi] = useState<CarouselApi>();
-  const [current, setCurrent] = useState(0);
-  const [count, setCount] = useState(0);
   const [selected, setSelected] = useState<ServicesMapProps>(services[0]);
 
   useEffect(() => {
@@ -25,12 +23,9 @@ export function ServicesCarousel({ services }: ServicesArrayProps) {
       return;
     }
 
-    setCount(api.scrollSnapList().length);
-
     const updateSelection = () => {
       const currentIndex = api.selectedScrollSnap();
       const nextIndex = (currentIndex + 1) % services.length;
-      setCurrent(nextIndex);
       setSelected(services[nextIndex]);
     };
 
@@ -41,10 +36,6 @@ export function ServicesCarousel({ services }: ServicesArrayProps) {
       api.off("select", updateSelection);
     };
   }, [api, services]);
-
-  const handleProjectClick = () => {
-    // console.log("Project clicked: ", selected.name);
-  };
 
   return (
     <div className="px-6 sm:px-2 md:px-6 ">
@@ -79,10 +70,8 @@ export function ServicesCarousel({ services }: ServicesArrayProps) {
         <CarouselNext />
       </Carousel>
       <div className="py-2 text-center text-sm text-gray-500 max-w-[600px] mx-auto">
-        <span onClick={handleProjectClick}>
-          <p className="text-lg font-semibold text-gray-800">{selected.name}</p>
-          <p>{selected.description}</p>
-        </span>
+        <p className="text-lg font-semibold text-gray-800">{selected.name}</p>
+        <p>{selected.description}</p>
       </div>
     </div>
   );

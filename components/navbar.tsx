@@ -20,7 +20,7 @@ export default function Navbar() {
           <span className="sr-only">NGALANG BENANG</span>
           <Image
             className="h-12 w-auto"
-            src="/logo.png"
+            src="/logo.webp"
             alt="NGALANG BENANG Logo"
             width={300}
             height={300}
@@ -61,7 +61,7 @@ export default function Navbar() {
               <span className="sr-only">Your Company</span>
               <Image
                 className="h-8 w-auto"
-                src="/logo.png"
+                src="/logo.webp"
                 alt="NGALANG BENANG"
                 width={150}
                 height={150}

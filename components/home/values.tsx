@@ -38,7 +38,7 @@ export default function Values() {
             </div>
             <div className="flex items-center justify-end lg:order-first">
               <Image
-                src="/values.png"
+                src="/values.webp"
                 alt="Product screenshot"
                 className="rounded-xl shadow-xl ring-1 ring-gray-400/10 p-4"
                 width={640}

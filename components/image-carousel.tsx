@@ -16,8 +16,6 @@ import { ProjectCarouselProps, ProjectsArrayProps } from "../data/projects";
 
 export function ImageCarousel({ projects }: ProjectsArrayProps) {
   const [api, setApi] = useState<CarouselApi>();
-  const [current, setCurrent] = useState(0);
-  const [count, setCount] = useState(0);
   const [selected, setSelected] = useState<ProjectCarouselProps>(projects[0]);
 
   useEffect(() => {
@@ -25,12 +23,9 @@ export function ImageCarousel({ projects }: ProjectsArrayProps) {
       return;
     }
 
-    setCount(api.scrollSnapList().length);
-
     const updateSelection = () => {
       const currentIndex = api.selectedScrollSnap();
       const nextIndex = (currentIndex + 1) % projects.length;
-      setCurrent(nextIndex);
       setSelected(projects[nextIndex]);
     };
 
@@ -41,10 +36,6 @@ export function ImageCarousel({ projects }: ProjectsArrayProps) {
       api.off("select", updateSelection);
     };
   }, [api, projects]);
-
-  const handleProjectClick = () => {
-    // console.log("Project clicked: ", selected.name);
-  };
 
   return (
     <div className="px-6 sm:px-2 md:px-6">
@@ -81,9 +72,7 @@ export function ImageCarousel({ projects }: ProjectsArrayProps) {
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
-      {/* <div className="py-2 text-center text-sm text-gray-400">
-        <span onClick={handleProjectClick}>{selected.name}</span>
-      </div> */}
+      <div className="py-2 text-center text-sm text-gray-400">{selected.name}</div>
     </div>
   );
 }

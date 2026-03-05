@@ -24,7 +24,7 @@ export default function AboutPage() {
 
       <div className="relative isolate -z-10 overflow-hidden bg-gray-900 py-24 sm:py-32 mb-32">
         <Image
-          src="/mlc2.jpg"
+          src="/mlc2.webp"
           alt="MLC Swimming Pool Construction Site Background"
           layout="fill"
           objectFit="cover"
@@ -131,7 +131,7 @@ export default function AboutPage() {
       <FadeIn>
         <div className="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
           <Image
-            src="/yre10.jpg"
+            src="/yre10.webp"
             alt="Metronet Yanchep Rail Extension"
             width={1220}
             height={486}

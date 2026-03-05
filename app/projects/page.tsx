@@ -15,7 +15,7 @@ export default function ProjectsPage() {
     <>
       <div className="relative isolate -z-10 overflow-hidden bg-gray-900 py-24 sm:py-32">
         <Image
-          src="/brucerock_blask_paint1.jpg"
+          src="/brucerock_blask_paint1.webp"
           alt="Bluerock Engineering Construction Site Background"
           layout="fill"
           objectFit="cover"
