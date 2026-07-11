@@ -5,9 +5,9 @@ import Footer from "@/components/footer";
 import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = {
-  title: "NGALANG BENANG | Formwork, Steel, and Concreting",
+  title: "NGALANG BENANG | Indigenous Joint Venture",
   description:
-    "NGALANG BENANG is a Western Australian formwork, reinforcing and concrete construction contractor.",
+    "NGALANG BENANG is a joint venture focused on Indigenous economic empowerment, capacity building, employment and training.",
 };
 
 export default function RootLayout({

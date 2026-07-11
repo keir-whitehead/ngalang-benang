@@ -38,7 +38,8 @@ export default function Footer() {
           </Link>
         </nav>
         <p className="mt-10 text-center text-xs leading-5 text-gray-500">
-          &copy; {getCurrentYear()} NGALANG BENANG. All rights reserved.
+          &copy; {getCurrentYear()} NGALANG BENANG. ABN 52 695 365 667. All rights
+          reserved.
         </p>
       </div>
     </footer>
