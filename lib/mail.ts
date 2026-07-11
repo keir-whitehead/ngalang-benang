@@ -11,8 +11,8 @@ export const sendContactEmail = async (
   message: string
 ) => {
   await resend.emails.send({
-    from: "indigenous@ngalangbenang.com.au",
-    to: "indigenous@ngalangbenang.com.au",
+    from: "indigenous@ngalang.benang.com.au",
+    to: "indigenous@ngalang.benang.com.au",
     subject: "Contact form email",
     html: `<p>New contact form submission</p><p>Name: ${name}</p><p>Email: ${email}</p><p>Phone: ${
       phone ? phone : "N/A"

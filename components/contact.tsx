@@ -111,6 +111,11 @@ export default function Contact() {
               <h2 className="text-3xl font-bold tracking-tight text-gray-900">
                 Get in touch
               </h2>
+              <p className="mt-6 text-base leading-7 text-gray-600">
+                <span className="font-semibold text-gray-900">NGALANG.BENANG</span>
+                <br />
+                ABN: 52 695 365 667
+              </p>
               {/* <p className="mt-6 text-lg leading-8 text-gray-600">
               Proin volutpat consequat porttitor cras nullam gravida at. Orci
               molestie a eu arcu. Sed ut tincidunt integer elementum id sem.
@@ -156,9 +161,9 @@ export default function Contact() {
                   <span>
                     <a
                       className="hover:text-gray-900"
-                      href="mailto:indigenous@ngalangbenang.com.au"
+                      href="mailto:indigenous@ngalang.benang.com.au"
                     >
-                      indigenous@ngalangbenang.com.au
+                      indigenous@ngalang.benang.com.au
                     </a>
                   </span>
                 </dd>

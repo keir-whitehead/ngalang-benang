@@ -19,7 +19,8 @@ export default function Hero() {
             </div>
             <div className="hidden sm:mt-32 sm:flex lg:mt-16">
               <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-500 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                Your Trusted Partner in Formwork, Reinforcing, and Concreting.{" "}
+                A joint venture between Sanning Pty Ltd and Yakiny Moorditj
+                Indigenous Corporation.{" "}
                 <Link
                   href="/projects"
                   className="whitespace-nowrap font-semibold text-red-700"
@@ -30,20 +31,18 @@ export default function Hero() {
               </div>
             </div>
             <h1 className="mt-16 text-4xl font-bold tracking-tight text-gray-900 sm:mt-10 sm:text-5xl">
-              Welcome to NGALANG BENANG,
-              <br /> we believe in forming concrete relationships
+              Economic empowerment through strong partnerships
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              NGALANG BENANG has over 40 years of expertise in the Western Australia
-              construction industry. Specialising in formwork, reinforcing,
-              concreting, and earthworks, we are committed to delivering robust
-              and high-quality solutions for projects in the infrastructure,
-              resources and commercial sectors.
+              NGALANG BENANG is a strategic joint venture and collaborative
+              business partnership focused on economic empowerment, capacity
+              building, and long-term employment and training initiatives within
+              Indigenous communities and for Indigenous people.
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Whether it’s a small-scale venture or a large-scale undertaking,
-              local or remote, we have the experience, skills, and capabilities
-              to exceed your expectations.
+              We are committed to the objectives of the Indigenous Procurement
+              Policy and fully endorse the participation of Indigenous businesses
+              in private and government contracts and procurement processes.
             </p>
             <div className="mt-10 flex items-center gap-x-6">
               <Link

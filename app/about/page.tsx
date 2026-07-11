@@ -8,13 +8,12 @@ import { FadeIn } from "@/components/FadeIn";
 export const metadata: Metadata = {
   title: "NGALANG BENANG | About Us",
   description:
-    "NGALANG BENANG has over 40 years of expertise in the Western Australia construction industry. Specialising in formwork, reinforcing, concreting, and earthworks, we are committed to delivering robust and high-quality solutions for projects in the infrastructure, resources and commercial sectors.",
+    "NGALANG BENANG is a joint venture focused on Indigenous economic empowerment, capacity building, employment and training.",
 };
 
 const stats = [
-  { label: "Projects completed", value: "180+" },
-  { label: "Combined experience", value: "40 Years" },
-  { label: "Qualified tradespeople", value: "100+" },
+  { label: "Indigenous workforce target", value: "50%" },
+  { label: "Non-Indigenous workforce target", value: "50%" },
 ];
 
 export default function AboutPage() {
@@ -63,11 +62,8 @@ export default function AboutPage() {
               About NGALANG BENANG
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              NGALANG BENANG has over 40 years of expertise in the Western Australia
-              construction industry. Specialising in formwork, reinforcing,
-              concreting, and earthworks, we are committed to delivering robust
-              and high-quality solutions for projects in the infrastructure,
-              resources and commercial sectors.
+              A joint venture between Sanning Pty Ltd and Yakiny Moorditj
+              Indigenous Corporation.
             </p>
           </div>
         </div>
@@ -78,28 +74,26 @@ export default function AboutPage() {
         <div className="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Our mission
+              Our purpose
             </h2>
             <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
               <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
                 <p className="text-xl leading-8 text-gray-600">
-                  Our mission is to consistency deliver innovative,
-                  cost-efficient, and high-quality construction solutions,
-                  exceeding client expectations. Though our expertise,
-                  experience, and collaborative approach, we aim to build
-                  long-term partnerships and contribute to the growth and
-                  development of the communities we serve.
+                  NGALANG BENANG is a strategic joint venture and collaborative
+                  business partnership focused on economic empowerment, capacity
+                  building, and long-term employment and training initiatives
+                  within Indigenous communities and for Indigenous people.
                 </p>
                 <h2 className="text-3xl mt-10 font-bold tracking-tight text-gray-900 sm:text-4xl">
-                  Our vision
+                  Our commitment
                 </h2>
                 <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
                   <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
                     <p className="text-xl leading-8 text-gray-600">
-                      To be the leading provider of formwork, steel, concreting,
-                      earthworks and labour hire solutions in Western Australia.
-                      Recognized for our unwavering commitment to quality,
-                      safety and customer satisfaction.
+                      We are committed to the objectives of the Indigenous
+                      Procurement Policy and fully endorse the participation of
+                      Indigenous businesses in private and government contracts
+                      and procurement processes.
                     </p>
                   </div>
                 </div>
@@ -148,17 +142,23 @@ export default function AboutPage() {
               Our values
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              At NGALANG BENANG, we value integrity and adherence to strong moral and
-              ethical principles in our business relationships and interactions.
+              Our joint venture facilitates the transfer of skills and knowledge
+              from non-Indigenous to Indigenous people, enhancing capability,
+              competitiveness and career opportunities.
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              We consistently aim to instil a safe and positive workplace
-              culture in which everyone feels valued and have a real impact on
-              projects.
+              We focus on cultural understanding and respect between Indigenous
+              and non-Indigenous businesses to support more sustainable and
+              ethical business practices.
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              We are committed to delivering quality products, services and
-              experiences for our clients.
+              We intend to close the gap between organisations and Indigenous
+              communities by creating real, lasting pathways to employment,
+              training, economic participation and cultural recognition.
+            </p>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              Our workforce target is an equal 50/50 split of Indigenous and
+              non-Indigenous people.
             </p>
           </div>
         </div>
