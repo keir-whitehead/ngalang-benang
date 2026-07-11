@@ -1,209 +1,143 @@
-import Contact from "@/components/contact";
+import type { Metadata } from "next";
 import Image from "next/image";
-import { Metadata } from "next";
-import { team } from "@/data/team";
-
+import Contact from "@/components/contact";
 import { FadeIn } from "@/components/FadeIn";
+import { team } from "@/data/team";
+import { CheckCircleIcon } from "@heroicons/react/24/outline";
 
 export const metadata: Metadata = {
-  title: "NGALANG BENANG | About Us",
+  title: "About the Joint Venture | NGALANG BENANG",
   description:
-    "NGALANG BENANG is a joint venture focused on Indigenous economic empowerment, capacity building, employment and training.",
+    "Learn about the NGALANG BENANG joint venture, our Indigenous Procurement Policy commitment and our focus on capability, employment and training.",
 };
 
-const stats = [
-  { label: "Indigenous workforce target", value: "50%" },
-  { label: "Non-Indigenous workforce target", value: "50%" },
+const purposeItems = [
+  {
+    title: "Economic empowerment",
+    copy: "A collaborative business partnership supporting capacity building and long-term employment and training initiatives within Indigenous communities and for Indigenous people.",
+  },
+  {
+    title: "Indigenous procurement",
+    copy: "A commitment to the objectives of the Indigenous Procurement Policy and the participation of Indigenous businesses in private and government contracts.",
+  },
+  {
+    title: "Skills and knowledge transfer",
+    copy: "A practical pathway for transferring skills and knowledge from non-Indigenous to Indigenous people to strengthen capability, competitiveness and career opportunities.",
+  },
+  {
+    title: "Cultural understanding",
+    copy: "Greater understanding and respect between Indigenous and non-Indigenous businesses, supporting more sustainable and ethical business practices.",
+  },
 ];
 
 export default function AboutPage() {
   return (
-    <main className="isolate">
-      {/* New Hero */}
-
-      <div className="relative isolate -z-10 overflow-hidden bg-gray-900 py-24 sm:py-32 mb-32">
+    <main>
+      <section className="relative isolate overflow-hidden bg-stone-950 py-24 text-white sm:py-32">
         <Image
-          src="/mlc2.webp"
-          alt="MLC Swimming Pool Construction Site Background"
-          layout="fill"
-          objectFit="cover"
-          quality={75}
-          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 100vw"
-          className="-z-10 opacity-20"
+          src="/yre10.webp"
+          alt="NGALANG BENANG works on the Yanchep Rail Extension"
+          fill
           priority
+          sizes="100vw"
+          className="-z-20 object-cover opacity-35"
         />
-        <div
-          className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
-          aria-hidden="true"
-        >
-          <div
-            className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#a1887f] to-[#4e342e] opacity-20"
-            style={{
-              clipPath:
-                "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-            }}
-          />
-        </div>
-        <div
-          className="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
-          aria-hidden="true"
-        >
-          <div
-            className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#a1887f] to-[#4e342e] opacity-20"
-            style={{
-              clipPath:
-                "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-            }}
-          />
-        </div>
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:mx-0">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              About NGALANG BENANG
+        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-stone-950 via-stone-950/85 to-stone-950/25" />
+        <div className="site-container">
+          <div className="max-w-3xl">
+            <p className="eyebrow text-yellow-300">About NGALANG BENANG</p>
+            <h1 className="mt-5 text-4xl font-semibold tracking-tight text-white sm:text-6xl">
+              A joint venture built to create lasting pathways
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
-              A joint venture between Sanning Pty Ltd and Yakiny Moorditj
-              Indigenous Corporation.
+            <p className="mt-7 max-w-2xl text-lg leading-8 text-stone-200">
+              Sanning Pty Ltd and Yakiny Moorditj Indigenous Corporation combine
+              civil works capability with a shared commitment to Indigenous economic participation.
             </p>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* Content section */}
       <FadeIn>
-        <div className="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
-          <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Our purpose
-            </h2>
-            <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
-              <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
-                <p className="text-xl leading-8 text-gray-600">
-                  NGALANG BENANG is a strategic joint venture and collaborative
-                  business partnership focused on economic empowerment, capacity
-                  building, and long-term employment and training initiatives
-                  within Indigenous communities and for Indigenous people.
-                </p>
-                <h2 className="text-3xl mt-10 font-bold tracking-tight text-gray-900 sm:text-4xl">
-                  Our commitment
-                </h2>
-                <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
-                  <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
-                    <p className="text-xl leading-8 text-gray-600">
-                      We are committed to the objectives of the Indigenous
-                      Procurement Policy and fully endorse the participation of
-                      Indigenous businesses in private and government contracts
-                      and procurement processes.
-                    </p>
-                  </div>
+        <section className="bg-white py-20 sm:py-28">
+          <div className="site-container grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
+            <div>
+              <p className="eyebrow">Our purpose</p>
+              <h2 className="section-title mt-4">Closing the gap through real participation</h2>
+              <p className="section-copy mt-6">
+                We are intent on creating real, lasting pathways to employment,
+                training, economic participation and cultural recognition.
+              </p>
+              <div className="mt-10 grid grid-cols-2 gap-4">
+                <div className="border-t-2 border-red-700 pt-4">
+                  <p className="font-serif text-4xl font-semibold text-stone-950">50%</p>
+                  <p className="mt-2 text-sm leading-6 text-stone-600">Indigenous workforce target</p>
+                </div>
+                <div className="border-t-2 border-yellow-400 pt-4">
+                  <p className="font-serif text-4xl font-semibold text-stone-950">50%</p>
+                  <p className="mt-2 text-sm leading-6 text-stone-600">Non-Indigenous workforce target</p>
                 </div>
               </div>
+            </div>
+            <div className="divide-y divide-stone-300 border-y border-stone-300">
+              {purposeItems.map((item) => (
+                <article key={item.title} className="grid gap-3 py-6 sm:grid-cols-[0.8fr_1.2fr]">
+                  <h3 className="flex items-start gap-3 text-base font-semibold text-stone-950">
+                    <CheckCircleIcon className="mt-0.5 h-5 w-5 shrink-0 text-red-700" aria-hidden="true" />
+                    {item.title}
+                  </h3>
+                  <p className="text-sm leading-7 text-stone-600">{item.copy}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      </FadeIn>
 
-              <div className="lg:flex lg:flex-auto lg:justify-center">
-                <dl className="w-64 space-y-8 xl:w-80">
-                  {stats.map((stat) => (
-                    <div
-                      key={stat.label}
-                      className="flex flex-col-reverse gap-y-4"
-                    >
-                      <dt className="text-base leading-7 text-gray-600">
-                        {stat.label}
-                      </dt>
-                      <dd className="text-5xl font-semibold tracking-tight text-gray-900">
-                        {stat.value}
-                      </dd>
-                    </div>
-                  ))}
-                </dl>
+      <FadeIn>
+        <section className="bg-[#f2eee6] py-20 sm:py-28">
+          <div className="site-container">
+            <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem]">
+                <Image src="/tonkin_footbridge.webp" alt="Civil works on the Tonkin footbridge" fill sizes="(max-width: 1024px) 100vw, 55vw" className="object-cover" />
+              </div>
+              <div>
+                <p className="eyebrow">What partnership means</p>
+                <h2 className="section-title mt-4">Capability shared. Opportunity multiplied.</h2>
+                <p className="section-copy mt-6">
+                  The joint venture model creates a direct bridge between commercial
+                  delivery and Indigenous capability building. It allows project work
+                  to generate enduring skills, experience and opportunity beyond the
+                  life of an individual contract.
+                </p>
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </FadeIn>
 
-      {/* Image section */}
       <FadeIn>
-        <div className="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
-          <Image
-            src="/yre10.webp"
-            alt="Metronet Yanchep Rail Extension"
-            width={1220}
-            height={486}
-            className="aspect-[5/2] w-full object-cover xl:rounded-3xl"
-          />
-        </div>
-      </FadeIn>
-
-      {/* Values section */}
-      <FadeIn>
-        <div className="mx-auto mt-16 max-w-7xl px-6 sm:mt-32 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Our values
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Our joint venture facilitates the transfer of skills and knowledge
-              from non-Indigenous to Indigenous people, enhancing capability,
-              competitiveness and career opportunities.
-            </p>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              We focus on cultural understanding and respect between Indigenous
-              and non-Indigenous businesses to support more sustainable and
-              ethical business practices.
-            </p>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              We intend to close the gap between organisations and Indigenous
-              communities by creating real, lasting pathways to employment,
-              training, economic participation and cultural recognition.
-            </p>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Our workforce target is an equal 50/50 split of Indigenous and
-              non-Indigenous people.
-            </p>
-          </div>
-        </div>
-      </FadeIn>
-
-      {/* Team section */}
-      <FadeIn>
-        <div className="mx-auto my-32 max-w-7xl px-6 sm:mt-32 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Our team
-            </h2>
-          </div>
-          <ul
-            role="list"
-            className="grid gap-x-8 gap-y-12 mt-10 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
-          >
-            {team.map((person) => (
-              <li key={person.name}>
-                <div className="flex items-center gap-x-6">
+        <section className="bg-white py-20 sm:py-28">
+          <div className="site-container">
+            <div className="max-w-2xl">
+              <p className="eyebrow">Leadership</p>
+              <h2 className="section-title mt-4">The people guiding the partnership</h2>
+            </div>
+            <ul className="mt-12 grid gap-8 lg:grid-cols-2" role="list">
+              {team.map((person) => (
+                <li key={person.name} className="flex flex-col gap-6 border-t border-stone-300 pt-7 sm:flex-row">
                   {person.imageUrl && (
-                    <Image
-                      className="h-16 w-16 rounded-full self-start"
-                      src={person.imageUrl}
-                      alt={person.name}
-                      width={120}
-                      height={120}
-                    />
+                    <Image className="h-28 w-28 shrink-0 rounded-2xl object-cover grayscale" src={person.imageUrl} alt={person.name} width={140} height={140} />
                   )}
                   <div>
-                    <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
-                      {person.name}
-                    </h3>
-                    <p className="text-sm font-semibold leading-6 text-red-700">
-                      {person.role}
-                    </p>
-                    <p className="text-sm leading-6 text-gray-900">
-                      {person.description}
-                    </p>
+                    <h3 className="text-xl font-semibold text-stone-950">{person.name}</h3>
+                    <p className="mt-1 text-sm font-bold text-red-700">{person.role}</p>
+                    <p className="mt-3 text-sm leading-7 text-stone-600">{person.description}</p>
                   </div>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
       </FadeIn>
       <Contact />
     </main>

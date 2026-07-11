@@ -5,21 +5,36 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import navigation from "./navigation";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
-    <header className="bg-white">
+    <header className="sticky top-0 z-50 border-b border-stone-200/80 bg-white/95 backdrop-blur">
+      <div className="hidden bg-stone-950 text-stone-200 md:block">
+        <div className="site-container flex h-9 items-center justify-between text-xs">
+          <p>
+            A joint venture between Sanning Pty Ltd &amp; Yakiny Moorditj Indigenous Corporation
+          </p>
+          <a
+            href="mailto:indigenous@ngalang.benang.com.au"
+            className="font-semibold text-white transition hover:text-yellow-300"
+          >
+            indigenous@ngalang.benang.com.au
+          </a>
+        </div>
+      </div>
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="site-container flex h-20 items-center justify-between"
         aria-label="Global"
       >
         <Link href="/" className="-m-1.5 p-1.5">
           <span className="sr-only">NGALANG BENANG</span>
           <Image
-            className="h-12 w-auto"
+            className="h-11 w-auto sm:h-12"
             src="/logo_img.webp"
             alt="NGALANG BENANG Logo"
             width={220}
@@ -37,16 +52,24 @@ export default function Navbar() {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <div className="hidden lg:flex lg:gap-x-12">
+        <div className="hidden items-center lg:flex lg:gap-x-8">
           {navigation.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              className="text-sm font-semibold leading-6 text-gray-900"
+              aria-current={pathname === item.href ? "page" : undefined}
+              className={`border-b-2 py-2 text-sm font-semibold transition ${
+                pathname === item.href
+                  ? "border-red-700 text-red-700"
+                  : "border-transparent text-stone-700 hover:border-stone-300 hover:text-stone-950"
+              }`}
             >
               {item.name}
             </Link>
           ))}
+          <Link href="/contact" className="button-primary ml-2 min-h-10 px-5 py-2">
+            Start a conversation
+          </Link>
         </div>
       </nav>
       <Dialog
@@ -55,11 +78,11 @@ export default function Navbar() {
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
       >
-        <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <div className="fixed inset-0 z-50 bg-stone-950/30 backdrop-blur-sm" />
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-stone-900/10">
           <div className="flex items-center justify-between">
             <Link href="/" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">NGALANG BENANG</span>
               <Image
                 className="h-8 w-auto"
                 src="/logo_img.webp"
@@ -91,7 +114,20 @@ export default function Navbar() {
                   </Link>
                 ))}
               </div>
-              <div className="py-6"></div>
+              <div className="space-y-4 py-6">
+                <Link
+                  href="/contact"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="button-primary w-full"
+                >
+                  Start a conversation
+                </Link>
+                <p className="text-sm leading-6 text-stone-500">
+                  ABN 52 695 365 667
+                  <br />
+                  Unit 6/20 Dellamarta Road, Wangara WA 6065
+                </p>
+              </div>
             </div>
           </div>
         </Dialog.Panel>

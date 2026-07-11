@@ -9,7 +9,7 @@ import RecentProjects from "@/components/home/recentProjects";
 
 export default function Home() {
   return (
-    <div>
+    <main>
       <Hero />
       <Services />
       <RecentProjects />
@@ -18,6 +18,6 @@ export default function Home() {
       <ExtraInfo />
       <Team />
       <Contact />
-    </div>
+    </main>
   );
 }

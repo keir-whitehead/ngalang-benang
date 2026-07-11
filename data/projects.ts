@@ -1,13 +1,3 @@
-export interface ProjectCarouselProps {
-  id: number;
-  name: string;
-  src: string[];
-}
-
-export interface ProjectsArrayProps {
-  projects: ProjectCarouselProps[];
-}
-
 export const projects = [
   {
     id: 1,
