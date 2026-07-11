@@ -1,13 +1,3 @@
-export interface ServicesMapProps {
-  name: string;
-  description: string;
-  imageSrc: string;
-}
-
-export interface ServicesArrayProps {
-  services: ServicesMapProps[];
-}
-
 export const services = [
   {
     name: "Steel Reinforcement",
@@ -18,13 +8,13 @@ export const services = [
   {
     name: "Concrete",
     description:
-      "Pouring, leveling, and finishing of concrete, crucial for creating stable foundations and structures. We specialise in: concrete placement, structural concrete, suspended concrete, footings and slabs, in-situ walls and slabs, tilt panel walls, and bridge construction.",
+      "Pouring, levelling and finishing concrete for stable foundations and structures. We specialise in concrete placement, structural and suspended concrete, footings and slabs, in-situ walls, tilt panel walls and bridge construction.",
     imageSrc: "/concrete.webp",
   },
   {
     name: "Formwork",
     description:
-      "Construction of molds or forms to hold wet concrete in the desired shape. We deliver superior formwork solutions, thanks to our teams expertise and precision.",
+      "Construction of moulds and forms to hold wet concrete in the required shape. Our teams deliver precise, high-quality formwork solutions.",
     imageSrc: "/formwork.webp",
   },
   {
@@ -42,7 +32,7 @@ export const services = [
   {
     name: "Labour Hire",
     description:
-      "We currently have the capacity to provide a skilled workforce of up to 100 individuals, comprising experienced Tradesmen, Supervisors, Leading Hands,  Crane Operators, Riggers, Scaffolders, Formwork Carpenters, Formworkers, Steel Fixers, Concreters, Drainers, Machine Operators, and more, depending on the specific trade requirements.",
+      "Skilled labour hire tailored to project requirements, including supervisors, leading hands, crane operators, riggers, scaffolders, formwork carpenters, steel fixers, concreters, drainers and machine operators.",
     imageSrc: "/laborhire.webp",
   },
 ];

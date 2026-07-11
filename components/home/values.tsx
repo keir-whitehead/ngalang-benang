@@ -1,53 +1,73 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FadeIn } from "../FadeIn";
+import { CheckCircleIcon } from "@heroicons/react/24/outline";
+
+const commitments = [
+  {
+    title: "Indigenous participation",
+    copy: "We endorse the participation of Indigenous businesses in private and government contracts and procurement processes.",
+  },
+  {
+    title: "Skills transfer",
+    copy: "We facilitate the transfer of skills and knowledge to strengthen capability, competitiveness and career opportunities.",
+  },
+  {
+    title: "Cultural understanding",
+    copy: "We build respect between Indigenous and non-Indigenous businesses to support sustainable and ethical practices.",
+  },
+  {
+    title: "Lasting pathways",
+    copy: "We create practical pathways to employment, training, economic participation and cultural recognition.",
+  },
+];
 
 export default function Values() {
   return (
     <FadeIn>
-      <div id="about" className="overflow-hidden bg-white py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-            <div className="lg:ml-auto lg:pl-4 lg:pt-4">
-              <div className="lg:max-w-lg">
-                <h2 className="text-base font-semibold leading-7 text-red-700">
-                  Our Values
-                </h2>
-                <p className="mt-6 text-lg leading-8 text-gray-600">
-                  At NGALANG BENANG, we value integrity and adherence to strong moral
-                  and ethical principles in our business relationships and
-                  interactions.
-                </p>
-                <p className="mt-6 text-lg leading-8 text-gray-600">
-                  We consistently aim to instil a safe and positive workplace
-                  culture in which everyone feels valued and have a real impact
-                  on projects.
-                </p>
-                <p className="mt-6 text-lg leading-8 text-gray-600">
-                  We are committed to delivering quality products, services and
-                  experiences for our clients.
-                </p>
-                <p className="mt-6">
-                  <a
-                    href={"/about"}
-                    className="text-sm font-semibold leading-6 text-red-700"
-                  >
-                    Learn more <span aria-hidden="true">→</span>
-                  </a>
+      <section id="about" className="overflow-hidden bg-[#f2eee6] py-20 sm:py-28">
+        <div className="site-container">
+          <div className="grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
+            <div className="relative">
+              <Image
+                src="/yre7.webp"
+                alt="Civil construction works on the Yanchep Rail Extension"
+                className="aspect-[4/5] w-full rounded-[2rem] object-cover shadow-xl"
+                width={640}
+                height={800}
+              />
+              <div className="absolute -bottom-6 right-4 max-w-[15rem] rounded-2xl bg-red-700 p-5 text-white shadow-xl sm:right-8">
+                <p className="font-serif text-3xl font-semibold">50/50</p>
+                <p className="mt-1 text-sm leading-6 text-red-50">
+                  Our target split of Indigenous and non-Indigenous people across our workforce.
                 </p>
               </div>
             </div>
-            <div className="flex items-center justify-end lg:order-first">
-              <Image
-                src="/values.webp"
-                alt="Product screenshot"
-                className="rounded-xl shadow-xl ring-1 ring-gray-400/10 p-4"
-                width={640}
-                height={640}
-              />
+            <div>
+              <p className="eyebrow">Our purpose in practice</p>
+              <h2 className="section-title mt-4">Stronger business through shared capability</h2>
+              <p className="section-copy mt-6 max-w-2xl">
+                We are intent on closing the gap between organisations and Indigenous
+                communities through practical opportunity, respect and long-term collaboration.
+              </p>
+              <div className="mt-10 divide-y divide-stone-300 border-y border-stone-300">
+                {commitments.map((commitment) => (
+                  <div key={commitment.title} className="grid gap-3 py-5 sm:grid-cols-[1fr_1.5fr]">
+                    <h3 className="flex items-start gap-3 text-base font-semibold text-stone-950">
+                      <CheckCircleIcon className="mt-0.5 h-5 w-5 shrink-0 text-red-700" aria-hidden="true" />
+                      {commitment.title}
+                    </h3>
+                    <p className="text-sm leading-6 text-stone-600">{commitment.copy}</p>
+                  </div>
+                ))}
+              </div>
+              <Link href="/about" className="button-primary mt-9">
+                Learn about the joint venture
+              </Link>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </FadeIn>
   );
 }

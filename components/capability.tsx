@@ -1,51 +1,35 @@
 import { FadeIn } from "./FadeIn";
-import Graybg from "./graybg";
+import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
 
 export default function Capability() {
   return (
     <FadeIn>
-      <div className="relative isolate overflow-hidden bg-gray-400">
-        <Graybg />
-        <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Download our Capability Statement
+      <section className="relative isolate overflow-hidden bg-[#f2eee6] py-20 sm:py-24">
+        <div className="site-container">
+          <div className="grid gap-8 border-y border-stone-300 py-10 md:grid-cols-[1.5fr_1fr] md:items-center">
+            <div>
+              <p className="eyebrow">Capability statement</p>
+              <h2 className="section-title mt-4">
+                Take a closer look at what we deliver
             </h2>
-            <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-600">
-              Click the button below to view our capability statement.
+            <p className="section-copy mt-5 max-w-xl">
+              Review our civil works capability, project experience and delivery approach.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            </div>
+            <div className="md:text-right">
               <a
                 href="/capability.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-md bg-white px-6 py-2.5 text-md font-semibold text-gray-900 shadow-sm hover:bg-gray-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                className="button-primary gap-2"
               >
-                View PDF
+                <ArrowDownTrayIcon className="h-5 w-5" aria-hidden="true" />
+                View capability statement
               </a>
             </div>
           </div>
         </div>
-        <svg
-          viewBox="0 0 1024 1024"
-          className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
-          aria-hidden="true"
-        >
-          <circle
-            cx={512}
-            cy={512}
-            r={512}
-            fill="url(#8d958450-c69f-4251-94bc-4e091a323369)"
-            fillOpacity="0.7"
-          />
-          {/* <defs>
-            <radialGradient id="8d958450-c69f-4251-94bc-4e091a323369">
-              <stop stopColor="#ff7a7a" />
-              <stop offset={1} stopColor="#991b1b" />
-            </radialGradient>
-          </defs> */}
-        </svg>
-      </div>
+      </section>
     </FadeIn>
   );
 }

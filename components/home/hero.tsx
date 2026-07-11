@@ -3,74 +3,59 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="relative bg-white">
-      <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
-        <div className="px-6 pb-24 pt-10 sm:pb-32 lg:col-span-7 lg:px-0 lg:pb-32 lg:pt-28 xl:col-span-6">
-          <div className="mx-auto max-w-2xl lg:mx-0">
-            <div className="flex justify-start">
-              <Image
-                src="/logo.webp"
-                alt="NGALANG BENANG Construction"
-                width={420}
-                height={135}
-                className="h-auto w-[250px] sm:w-[300px] lg:w-[330px] object-contain"
-                priority
-              />
-            </div>
-            <div className="hidden sm:mt-32 sm:flex lg:mt-16">
-              <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-500 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                A joint venture between Sanning Pty Ltd and Yakiny Moorditj
-                Indigenous Corporation.{" "}
-                <Link
-                  href="/projects"
-                  className="whitespace-nowrap font-semibold text-red-700"
-                >
-                  <span className="absolute inset-0" aria-hidden="true" />
-                  See Projects <span aria-hidden="true">&rarr;</span>
-                </Link>
-              </div>
-            </div>
-            <h1 className="mt-16 text-4xl font-bold tracking-tight text-gray-900 sm:mt-10 sm:text-5xl">
-              Economic empowerment through strong partnerships
-            </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              NGALANG BENANG is a strategic joint venture and collaborative
-              business partnership focused on economic empowerment, capacity
-              building, and long-term employment and training initiatives within
-              Indigenous communities and for Indigenous people.
-            </p>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              We are committed to the objectives of the Indigenous Procurement
-              Policy and fully endorse the participation of Indigenous businesses
-              in private and government contracts and procurement processes.
-            </p>
-            <div className="mt-10 flex items-center gap-x-6">
+    <section className="relative overflow-hidden bg-stone-950 text-white">
+      <div className="absolute inset-0 lg:left-1/2">
+        <Image
+          className="h-full w-full object-cover opacity-35 lg:opacity-75"
+          src="/tonkin_underpass.webp"
+          alt="Civil construction works at the Tonkin underpass"
+          fill
+          sizes="(max-width: 1024px) 100vw, 50vw"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-stone-950 via-stone-950/65 to-stone-950/10 lg:from-stone-950/80" />
+      </div>
+      <div className="site-container relative grid min-h-[720px] items-center py-20 lg:grid-cols-2 lg:py-28">
+        <div className="max-w-2xl lg:pr-16">
+          <p className="eyebrow text-yellow-300">Indigenous joint venture · Western Australia</p>
+          <h1 className="mt-6 text-4xl font-semibold leading-[1.08] tracking-tight text-white sm:text-6xl lg:text-7xl">
+            Building capability. Creating lasting opportunity.
+          </h1>
+          <p className="mt-7 max-w-xl text-lg leading-8 text-stone-200">
+            NGALANG BENANG brings Sanning Pty Ltd and Yakiny Moorditj Indigenous
+            Corporation together to deliver civil works while building Indigenous
+            skills, employment pathways and economic participation.
+          </p>
+          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Link
                 href="/contact"
-                className="rounded-md bg-red-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-700"
+                className="button-primary"
               >
-                Contact Us
+                Work with us
               </Link>
               <Link
-                href="/services"
-                className="text-sm font-semibold leading-6 text-gray-900"
+                href="/about"
+                className="button-secondary border-white/30 bg-white/10 text-white hover:border-white/60 hover:bg-white/15"
               >
-                Learn more <span aria-hidden="true">→</span>
+                Our joint venture <span aria-hidden="true" className="ml-2">→</span>
               </Link>
+          </div>
+          <div className="mt-12 grid max-w-xl grid-cols-2 gap-6 border-t border-white/20 pt-7 sm:grid-cols-3">
+            <div>
+              <p className="font-serif text-3xl font-semibold text-yellow-300">50/50</p>
+              <p className="mt-1 text-xs leading-5 text-stone-300">Workforce target</p>
+            </div>
+            <div>
+              <p className="font-serif text-3xl font-semibold text-yellow-300">IPP</p>
+              <p className="mt-1 text-xs leading-5 text-stone-300">Indigenous Procurement Policy</p>
+            </div>
+            <div className="col-span-2 sm:col-span-1">
+              <p className="font-serif text-3xl font-semibold text-yellow-300">WA</p>
+              <p className="mt-1 text-xs leading-5 text-stone-300">Civil works capability</p>
             </div>
           </div>
         </div>
-        <div className="relative lg:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0">
-          <Image
-            className="aspect-[3/2] w-full bg-gray-50 object-cover object-left lg:absolute lg:inset-0 lg:aspect-auto lg:h-full"
-            src="/tonkin_underpass.webp"
-            alt="NGALANG BENANG Construction"
-            width={1820}
-            height={1080}
-            priority
-          />
-        </div>
       </div>
-    </div>
+    </section>
   );
 }
