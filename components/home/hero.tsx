@@ -17,7 +17,16 @@ export default function Hero() {
       </div>
       <div className="site-container relative grid min-h-[720px] items-center py-20 lg:grid-cols-2 lg:py-28">
         <div className="max-w-2xl lg:pr-16">
-          <p className="eyebrow text-yellow-300">Indigenous joint venture · Western Australia</p>
+          <div className="inline-flex rounded-2xl bg-white p-3 shadow-xl shadow-black/20">
+            <Image
+              src="/logo.webp"
+              alt="NGALANG BENANG"
+              width={500}
+              height={500}
+              className="h-auto w-24 sm:w-28"
+            />
+          </div>
+          <p className="eyebrow mt-8 text-yellow-300">Indigenous joint venture · Western Australia</p>
           <h1 className="mt-6 text-4xl font-semibold leading-[1.08] tracking-tight text-white sm:text-6xl lg:text-7xl">
             Building capability. Creating lasting opportunity.
           </h1>
