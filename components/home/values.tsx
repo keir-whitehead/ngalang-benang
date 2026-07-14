@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FadeIn } from "../FadeIn";
+import { MeetingRings } from "../ArtMotif";
 import { CheckCircleIcon } from "@heroicons/react/24/outline";
 
 const commitments = [
@@ -25,8 +26,9 @@ const commitments = [
 export default function Values() {
   return (
     <FadeIn>
-      <section id="about" className="overflow-hidden bg-[#f2eee6] py-20 sm:py-28">
-        <div className="site-container">
+      <section id="about" className="relative overflow-hidden bg-[#f2eee6] py-20 sm:py-28">
+        <MeetingRings className="absolute -left-40 -top-40 h-[28rem] w-[28rem] text-red-700/[0.07]" />
+        <div className="site-container relative">
           <div className="grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
             <div className="relative">
               <Image

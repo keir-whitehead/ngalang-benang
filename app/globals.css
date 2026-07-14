@@ -77,6 +77,9 @@
   * {
     @apply border-border;
   }
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     @apply bg-background text-foreground;
     font-family: "Manrope", sans-serif;
@@ -109,9 +112,22 @@
     @apply text-base leading-8 text-stone-600 sm:text-lg;
   }
   .button-primary {
-    @apply inline-flex min-h-12 items-center justify-center rounded-full bg-red-700 px-6 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-red-800;
+    @apply inline-flex min-h-12 items-center justify-center rounded-full bg-red-700 px-6 py-3 text-sm font-bold text-white shadow-sm transition duration-200 hover:-translate-y-0.5 hover:bg-red-800 hover:shadow-lg hover:shadow-red-900/30 active:translate-y-0;
   }
   .button-secondary {
-    @apply inline-flex min-h-12 items-center justify-center rounded-full border border-stone-300 bg-white px-6 py-3 text-sm font-bold text-stone-900 transition hover:border-stone-500 hover:bg-stone-50;
+    @apply inline-flex min-h-12 items-center justify-center rounded-full border border-stone-300 bg-white px-6 py-3 text-sm font-bold text-stone-900 transition duration-200 hover:-translate-y-0.5 hover:border-stone-500 hover:bg-stone-50 active:translate-y-0;
+  }
+  /* Black / red / yellow brand stripe used as a section divider accent */
+  .brand-stripe {
+    @apply h-1 w-full;
+    background: linear-gradient(
+      to right,
+      theme("colors.stone.950") 0%,
+      theme("colors.stone.950") 33.4%,
+      theme("colors.red.700") 33.4%,
+      theme("colors.red.700") 66.7%,
+      theme("colors.yellow.400") 66.7%,
+      theme("colors.yellow.400") 100%
+    );
   }
 }

@@ -50,8 +50,9 @@ export default function AboutPage() {
               A joint venture built to create lasting pathways
             </h1>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-stone-200">
-              Sanning Pty Ltd and Yakiny Moorditj Indigenous Corporation combine
-              civil works capability with a shared commitment to Indigenous economic participation.
+              NGALANG BENANG combines civil works capability with a shared
+              commitment to Indigenous economic participation, in partnership
+              with Yakiny Moorditj Indigenous Corporation.
             </p>
           </div>
         </div>

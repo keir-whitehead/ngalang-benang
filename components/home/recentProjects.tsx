@@ -39,7 +39,7 @@ export default function RecentProjects() {
                     className="object-cover transition duration-500 group-hover:scale-105"
                   />
                 </div>
-                <h3 className="mt-4 border-t border-white/20 pt-4 text-lg font-semibold text-white">
+                <h3 className="mt-4 border-t border-white/20 pt-4 text-lg font-semibold text-white transition group-hover:text-yellow-300">
                   {project.name}
                 </h3>
               </article>

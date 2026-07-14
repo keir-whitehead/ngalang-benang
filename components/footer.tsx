@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import navigation from "./navigation";
+import { JourneyDots } from "./ArtMotif";
 
 function getCurrentYear() {
   return new Date().getFullYear();
@@ -9,6 +10,7 @@ function getCurrentYear() {
 export default function Footer() {
   return (
     <footer className="bg-stone-950 text-stone-300">
+      <div className="brand-stripe" aria-hidden="true" />
       <div className="site-container py-16 sm:py-20">
         <div className="grid gap-12 border-b border-white/10 pb-12 md:grid-cols-[1.4fr_0.8fr_1fr]">
           <div className="max-w-md">
@@ -19,12 +21,13 @@ export default function Footer() {
               height={72}
               className="h-14 w-auto brightness-0 invert"
             />
-            <p className="mt-6 text-sm leading-7 text-stone-400">
+            <JourneyDots className="mt-5 h-2 w-32 text-white/80" />
+            <p className="mt-5 text-sm leading-7 text-stone-400">
               A strategic joint venture focused on Indigenous economic empowerment,
               capability building and long-term employment and training.
             </p>
             <p className="mt-4 text-xs leading-6 text-stone-500">
-              Sanning Pty Ltd &amp; Yakiny Moorditj Indigenous Corporation
+              In partnership with Yakiny Moorditj Indigenous Corporation
             </p>
           </div>
           <div>

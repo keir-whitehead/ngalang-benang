@@ -13,11 +13,12 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-stone-200/80 bg-white/95 backdrop-blur">
+    <header className="sticky top-0 z-50 bg-white/95 shadow-sm shadow-stone-950/5 backdrop-blur">
+      <div className="brand-stripe" aria-hidden="true" />
       <div className="hidden bg-stone-950 text-stone-200 md:block">
         <div className="site-container flex h-9 items-center justify-between text-xs">
           <p>
-            A joint venture between Sanning Pty Ltd &amp; Yakiny Moorditj Indigenous Corporation
+            An Indigenous joint venture with Yakiny Moorditj Indigenous Corporation
           </p>
           <a
             href="mailto:indigenous@ngalang.benang.com.au"
@@ -45,7 +46,7 @@ export default function Navbar() {
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-stone-700"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
@@ -93,7 +94,7 @@ export default function Navbar() {
             </Link>
             <button
               type="button"
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 rounded-md p-2.5 text-stone-700"
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
@@ -101,14 +102,19 @@ export default function Navbar() {
             </button>
           </div>
           <div className="mt-6 flow-root">
-            <div className="-my-6 divide-y divide-gray-500/10">
+            <div className="-my-6 divide-y divide-stone-500/10">
               <div className="space-y-2 py-6">
                 {navigation.map((item) => (
                   <Link
                     key={item.name}
                     href={item.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    aria-current={pathname === item.href ? "page" : undefined}
+                    className={`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 ${
+                      pathname === item.href
+                        ? "bg-red-50 text-red-700"
+                        : "text-stone-900 hover:bg-stone-50"
+                    }`}
                   >
                     {item.name}
                   </Link>

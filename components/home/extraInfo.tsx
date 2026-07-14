@@ -1,5 +1,6 @@
 import { ArrowRightIcon } from "@heroicons/react/20/solid";
 import { FadeIn } from "../FadeIn";
+import { MeetingRings } from "../ArtMotif";
 import Link from "next/link";
 
 const features = [
@@ -22,8 +23,9 @@ const features = [
 export default function ExtraInfo() {
   return (
     <FadeIn>
-      <section className="bg-red-700 py-16 text-white sm:py-20">
-        <div className="site-container">
+      <section className="relative overflow-hidden bg-red-700 py-16 text-white sm:py-20">
+        <MeetingRings className="absolute -right-32 -bottom-32 h-96 w-96 text-yellow-300/15" />
+        <div className="site-container relative">
           <div className="mx-auto max-w-4xl">
             <dl>
               {features.map((feature) => (
