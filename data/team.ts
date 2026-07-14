@@ -13,4 +13,11 @@ export const team = [
       "Peter leads the day-to-day commercial management of the company to ensure that NGALANG BENANG provides the best value for money and solution-focused outcomes for our clients. As Director, one of Peter’s key focus areas is on business development and growth strategies to ensure our sustainable objectives are achieved.",
     imageUrl: "/peter.webp",
   },
+  {
+    name: "Mervyn",
+    role: "Local First Nations Leader",
+    description:
+      "Mervyn is a local First Nations leader and proud Minang man from the Noongar Peoples of the South West of Western Australia. He has the drive and vision to create quality training and employment opportunities for Indigenous men and women in civil construction through NGALANG BENANG.",
+    imageUrl: "/Mervyn.webp",
+  },
 ];
