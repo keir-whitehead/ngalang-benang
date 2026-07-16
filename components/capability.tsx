@@ -18,7 +18,7 @@ export default function Capability() {
             </div>
             <div className="md:text-right">
               <a
-                href="/capability2.pdf"
+                href="/CapabilityStatement.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="button-primary gap-2"
