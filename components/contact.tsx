@@ -20,6 +20,7 @@ import {
   PhoneIcon,
 } from "@heroicons/react/24/outline";
 import { FadeIn } from "./FadeIn";
+import { JourneyDots } from "./ArtMotif";
 import { ContactFormSchema } from "@/schemas";
 import { sendContactEmail } from "@/lib/mail";
 import { toast } from "sonner";
@@ -72,7 +73,8 @@ export default function Contact() {
                   Talk with our civil works or Indigenous affairs team about projects,
                   procurement, employment and training opportunities.
                 </p>
-                <p className="mt-7 text-sm leading-6 text-stone-400">
+                <JourneyDots className="mt-6 h-2 w-32 text-white/80" />
+                <p className="mt-6 text-sm leading-6 text-stone-400">
                   NGALANG.BENANG · ABN 52 695 365 667
                 </p>
                 <dl className="mt-10 space-y-6 text-sm leading-7 text-stone-200">

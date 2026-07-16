@@ -17,10 +17,10 @@ export default function Team() {
           >
             {team.map((person) => (
               <li key={person.name}>
-                <div className="flex h-full flex-col gap-6 border-t border-stone-300 pt-7 sm:flex-row">
+                <div className="group flex h-full flex-col gap-6 border-t border-stone-300 pt-7 sm:flex-row">
                   {person.imageUrl && (
                     <Image
-                      className="h-24 w-24 shrink-0 self-start rounded-2xl object-cover grayscale"
+                      className="h-24 w-24 shrink-0 self-start rounded-2xl object-cover grayscale transition duration-500 group-hover:grayscale-0"
                       src={person.imageUrl}
                       alt={person.name}
                       width={120}

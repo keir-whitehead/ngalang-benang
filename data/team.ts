@@ -14,8 +14,8 @@ export const team = [
     imageUrl: "/peter.webp",
   },
   {
-    name: "Mervyn",
-    role: "Local First Nations Leader",
+    name: "Mervyn Eades",
+    role: "Director",
     description:
       "Mervyn is a local First Nations leader and proud Minang man from the Noongar Peoples of the South West of Western Australia. He has the drive and vision to create quality training and employment opportunities for Indigenous men and women in civil construction through NGALANG BENANG.",
     imageUrl: "/Mervyn.webp",

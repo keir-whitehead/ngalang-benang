@@ -125,9 +125,9 @@ export default function AboutPage() {
             </div>
             <ul className="mt-12 grid gap-8 lg:grid-cols-2" role="list">
               {team.map((person) => (
-                <li key={person.name} className="flex flex-col gap-6 border-t border-stone-300 pt-7 sm:flex-row">
+                <li key={person.name} className="group flex flex-col gap-6 border-t border-stone-300 pt-7 sm:flex-row">
                   {person.imageUrl && (
-                    <Image className="h-28 w-28 shrink-0 rounded-2xl object-cover grayscale" src={person.imageUrl} alt={person.name} width={140} height={140} />
+                    <Image className="h-28 w-28 shrink-0 rounded-2xl object-cover grayscale transition duration-500 group-hover:grayscale-0" src={person.imageUrl} alt={person.name} width={140} height={140} />
                   )}
                   <div>
                     <h3 className="text-xl font-semibold text-stone-950">{person.name}</h3>
